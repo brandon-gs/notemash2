@@ -1,0 +1,12 @@
+.custom-card {
+  max-width: 26rem;
+}
+
+.card-header-profile {
+  background-color: red;
+}
+
+.card-profile {
+  width: 21rem;
+  background-color: white;
+}

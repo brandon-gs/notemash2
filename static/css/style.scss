@@ -1,0 +1,71 @@
+$principal: #303952;
+$secundario: #3742fa;
+
+$link: #0984e3;
+$link-hover: #18dcff;
+
+$iconos: #0984e3;
+
+$btn-register: #0984e3;
+$btn-register-hover: #0373c9;
+
+.custom-navbar {
+  background-color: $principal;
+  color: white !important;
+}
+
+.link {
+  color: $link !important;
+}
+
+.link:hover{
+  color: $link-hover !important;
+  text-decoration: none;
+}
+
+.custom-card {
+  max-width: 26rem;
+}
+
+span.icon:hover {
+  color: $principal;
+}
+
+span.icon:hover,
+.nav-link:hover,
+.div-link:hover,
+.icon-visible:hover {
+  cursor: pointer;
+}
+
+.inline {
+  display: inline;
+}
+
+.btn-register {
+  background-color: $btn-register;
+  color: white !important;
+  font-weight: bold;
+  border: 1px solid $btn-register;
+
+}
+
+.btn-register:hover {
+  background-color: $btn-register-hover;
+  color: white !important;
+  border: 1px solid $btn-register-hover;
+}
+
+.nav-link {
+  margin-left: 15px;
+}
+
+.input-group-addon {
+  color: $iconos;
+  background-color: #ffffff;
+}
+
+.input-group-addon:hover {
+  color: $principal;
+  background-color: #ffffff;
+}

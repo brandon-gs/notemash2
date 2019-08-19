@@ -1,0 +1,9 @@
+.input-group-addon {
+  color: #0984e3;
+  background-color: #ffffff;
+}
+
+.input-group-addon:hover {
+  color: #303952;
+  background-color: #ffffff;
+}

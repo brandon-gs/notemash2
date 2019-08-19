@@ -1,0 +1,63 @@
+.MuiTab-labelIcon .MuiTab-wrapper > :first-child {
+  margin-bottom: 1px !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #303952 !important;
+}
+
+.MuiTab-labelIcon {
+  min-height: 52px !important;
+  padding-top: 3px !important;
+}
+
+.menu-link {
+  background-color: #303952 !important;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.info-profile {
+  background-color: blue;
+}
+
+.img-profile {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 150px;
+}
+
+.nav-link:hover,
+.div-link:hover,
+.icon-visible:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .cards-profile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-profile-bottom,
+  .card-profile-responsive {
+    display: none;
+  }
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: #3f51b5;
+}
+
+.MuiBottomNavigationAction-root {
+  max-width: 172px !important;
+  min-width: 70px !important;
+}
+
+.MuiBottomNavigation-root {
+  height: 54px !important;
+  display: flex !important;
+  justify-content: left !important;
+  background-color: #fff !important;
+}
