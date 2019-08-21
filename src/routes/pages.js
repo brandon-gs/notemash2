@@ -21,8 +21,8 @@ router.get('/registro', isNotLoggedIn, (req, res) => {
     return nextApp.render(req, res, '/register', req.query);
 });
 
-router.get('/profile', isLoggedIn, (req, res) => {
-    return nextApp.render(req, res, '/profile', req.query);
+router.get('/notes', isLoggedIn, (req, res) => {
+    return nextApp.render(req, res, '/notes', req.query);
 });
 
 router.get('/:username', async (req, res) => {
@@ -47,8 +47,8 @@ router.get('/:username', async (req, res) => {
         });
 });
 
-router.get('/perfil', isLoggedIn, (req, res) => {
-    return nextApp.render(req, res, '/profile', req.query);
+router.get('/notas', isLoggedIn, (req, res) => {
+    return nextApp.render(req, res, '/notes', req.query);
 });
 
 router.get('/logout', (req, res) => {

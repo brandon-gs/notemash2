@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .cards-profile{
+  .cards-notes{
     display: none;
   }
 }

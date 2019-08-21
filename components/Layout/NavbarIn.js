@@ -9,7 +9,8 @@ class NavbarIn extends Component {
         isOpen: false,
         linksClass: {
             profile: "nav-item",
-            notes: "nav-item"
+            notes: "nav-item",
+            calificaciones: "nav-item"
         }
     }
 
@@ -22,6 +23,8 @@ class NavbarIn extends Component {
             case 'notes':
                 linksClass.notes += " active"
                 break;
+            case 'calificaciones':
+                linksClass.calificaciones += " active"
             default:
                 break;
         }
@@ -70,7 +73,12 @@ class NavbarIn extends Component {
                             <div className="navbar-nav ml-auto">
                                 <div className={this.state.linksClass.profile}>
                                     <Link href="/profile">
-                                        <a className="nav-link">Perfil</a>
+                                        <a className="nav-link">Notas</a>
+                                    </Link>
+                                </div>
+                                <div className={this.state.linksClass.calificaciones}>
+                                    <Link href="/calificaciones">
+                                        <a className="nav-link">Calificaciones</a>
                                     </Link>
                                 </div>
                                 <div className="nav-item">

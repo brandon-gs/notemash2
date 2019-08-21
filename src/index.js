@@ -28,6 +28,7 @@ nextApp.prepare()
 
 
         app.use('/', require('./routes/pages'));
+        app.use('/api/notes', require('./routes/notes'));
 
         app.get('*', (req, res) => {
             return handle(req, res)

@@ -10,20 +10,20 @@ export default function SimpleModal({ open, handleClose, title, body, action }) 
                 open={open}
                 onClose={handleClose}
             >
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">
                                 {title}
                             </h5>
                             <button type="button"
-                                class="close"
+                                className="close"
                                 onClick={handleClose}
                             >
                                 <span>&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             {body}
                         </div>
                     </div>
@@ -32,3 +32,7 @@ export default function SimpleModal({ open, handleClose, title, body, action }) 
         </div>
     );
 }
+
+
+
+

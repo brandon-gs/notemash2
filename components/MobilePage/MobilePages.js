@@ -16,8 +16,7 @@ import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import AssignmentLateIcon from '@material-ui/icons/AssignmentLate';
 
 // Custom components
-import HelloUser from './HelloUser';
-import NoteList from './NoteList';
+import NotePage from '../Notes/NotesMobile/NotePage';
 
 const useStyles = makeStyles({
     root: {
@@ -36,7 +35,7 @@ export default function LabelBottomNavigation() {
     function drawComponent(value) {
         switch (value) {
             case 'notas':
-                return <NoteList />
+                return <NotePage />
             case 'calificaciones':
                 return <div>Calificaciones</div>
             case 'horario':
@@ -52,7 +51,6 @@ export default function LabelBottomNavigation() {
 
     return (
         <div className="card-profile-responsive">
-            <HelloUser />
             {drawComponent(value)}
             <div className="fixed-bottom navbar-profile-bottom d-flex">
                 <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
