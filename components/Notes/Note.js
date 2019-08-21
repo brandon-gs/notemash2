@@ -45,24 +45,7 @@ const Note = ({ getNotes, note_id, title, description, date }) => {
     }
 
     return (
-        <section>
-            <ModalNote
-                open={open}
-                handleClose={handleClose}
-                title="Actualizar nota"
-                body={
-                    <FormNote
-                        note_id={note_id}
-                        getNotes={getNotes}
-                        handleClose={handleClose}
-                        action="PUT"
-                        textAction="Actualizar nota"
-                        titleProp={title}
-                        descriptionProp={description}
-                        dateProp={date}
-                    />
-                }
-            />
+        <div>
             <div className="card">
                 <div className="card-header d-flex justify-content-between">
                     <h5 className="justify-content-between">{title}</h5>
@@ -87,7 +70,24 @@ const Note = ({ getNotes, note_id, title, description, date }) => {
                     </button>
                 </div>
             </div>
-        </section>
+            <ModalNote
+                open={open}
+                handleClose={handleClose}
+                title="Actualizar nota"
+                body={
+                    <FormNote
+                        note_id={note_id}
+                        getNotes={getNotes}
+                        handleClose={handleClose}
+                        action="PUT"
+                        textAction="Actualizar nota"
+                        titleProp={title}
+                        descriptionProp={description}
+                        dateProp={date}
+                    />
+                }
+            />
+        </div>
     )
 }
 

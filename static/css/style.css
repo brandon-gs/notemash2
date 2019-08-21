@@ -63,3 +63,6 @@
   background-color: #fff !important;
 }
 
+.card{
+  min-width: 18rem;
+}
