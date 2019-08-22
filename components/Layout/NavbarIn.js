@@ -8,23 +8,16 @@ class NavbarIn extends Component {
     state = {
         isOpen: false,
         linksClass: {
-            profile: "nav-item",
-            notes: "nav-item",
-            calificaciones: "nav-item"
+            notes: "nav-item"
         }
     }
 
     changeActive = () => {
         let linksClass = this.state.linksClass;
         switch (this.props.active) {
-            case 'profile':
-                linksClass.profile += " active"
-                break;
             case 'notes':
                 linksClass.notes += " active"
                 break;
-            case 'calificaciones':
-                linksClass.calificaciones += " active"
             default:
                 break;
         }
@@ -71,14 +64,9 @@ class NavbarIn extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <div className="navbar-nav ml-auto">
-                                <div className={this.state.linksClass.profile}>
+                                <div className={this.state.linksClass.notes}>
                                     <Link href="/profile">
                                         <a className="nav-link">Notas</a>
-                                    </Link>
-                                </div>
-                                <div className={this.state.linksClass.calificaciones}>
-                                    <Link href="/calificaciones">
-                                        <a className="nav-link">Calificaciones</a>
                                     </Link>
                                 </div>
                                 <div className="nav-item">

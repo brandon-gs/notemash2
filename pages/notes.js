@@ -12,7 +12,7 @@ import MobilePage from '../components/MobilePage/MobilePages';
 
 const Profile = ({ user }) => (
     <>
-        <NavbarIn active="profile" title={user.username} />
+        <NavbarIn active="notes" title={user.username} />
         <div className="container mt-5 pt-3">
             <HelloUser />
             <NotePage />

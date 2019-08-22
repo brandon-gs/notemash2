@@ -56,6 +56,7 @@ const createSitemap = async () => {
     xml += `<lastmod>${lastMod}</lastmod>`;
     xml += "</url>";
   });
+  /*
   await axios.post(API_SOURCE)
     .then(res => {
       res.data.map(user => {
@@ -68,7 +69,7 @@ const createSitemap = async () => {
     })
     .catch(error => {
       console.log(error.message, error.name);
-    });
+    });*/
   xml += "</urlset>";
   return xml;
   /*

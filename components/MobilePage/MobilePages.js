@@ -36,14 +36,8 @@ export default function LabelBottomNavigation() {
         switch (value) {
             case 'notas':
                 return <NotePage />
-            case 'calificaciones':
-                return <div>Calificaciones</div>
-            case 'horario':
-                return <div>Horario</div>
-            case 'eventos':
-                return <div>Eventos</div>
-            case 'importantes':
-                return <div>Importantes</div>
+            case 'logut':
+                return <div>Saliendo...</div>            
             default:
                 break;
         }
@@ -55,9 +49,7 @@ export default function LabelBottomNavigation() {
             <div className="fixed-bottom navbar-profile-bottom d-flex">
                 <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
                     <BottomNavigationAction label="Notas" value="notas" icon={<AssignmentIcon />} />
-                    <BottomNavigationAction label="Calificaciones" value="calificaciones" icon={<TrendingUpIcon />} />
-                    <BottomNavigationAction label="Horario" value="horario" icon={<TimerIcon />} />
-                    <BottomNavigationAction label="Eventos" value="eventos" icon={<CalendarTodayIcon />} />
+                    <BottomNavigationAction label="Cerrar sesión" value="logout" icon={<TrendingUpIcon />} />
                 </BottomNavigation>
             </div>
         </div>

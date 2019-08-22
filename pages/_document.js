@@ -92,6 +92,8 @@ class MyDocument extends Document {
                     <link rel="stylesheet" href="static/css/custom/cards.css" />
                     <link rel="stylesheet" href="static/css/custom/icons.css" />
                     <link rel="stylesheet" href="static/css/custom/links.css" />
+                    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
+                    <link rel="icon" type="image/png" href="static/favicon.png" />
                 </Head>
                 <body>
                     <Main />
