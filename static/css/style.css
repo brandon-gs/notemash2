@@ -73,3 +73,24 @@
 .card {
   min-width: 18rem;
 }
+
+.masthead {
+  color: #ff4757;
+  width: 100%;
+  padding-top: 8rem;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 80vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
