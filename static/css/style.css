@@ -17,10 +17,6 @@
   text-decoration: none !important;
 }
 
-.info-profile {
-  background-color: blue;
-}
-
 .img-profile {
   width: 8rem;
   height: 8rem;
@@ -33,8 +29,18 @@
   cursor: pointer;
 }
 
+.btn-exit {
+  background-color: #303952 !important;
+  color: white;
+  border: none;
+}
+
+.btn-exit:hover {
+  color: yellow;
+}
+
 @media screen and (max-width: 991px) {
-  .cards-notes{
+  .cards-notes {
     display: none;
   }
 }
@@ -42,7 +48,8 @@
 @media screen and (min-width: 992px) {
   .navbar-profile-bottom,
   .card-profile-responsive,
-  .modal-dialog {
+  .modal-dialog,
+  .btn-exit {
     display: none !important;
   }
 }
@@ -63,6 +70,6 @@
   background-color: #fff !important;
 }
 
-.card{
+.card {
   min-width: 18rem;
 }

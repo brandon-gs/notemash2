@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import React, { Component } from 'react';
 import axios from 'axios';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
 
 class NavbarIn extends Component {
 
@@ -59,8 +61,11 @@ class NavbarIn extends Component {
                                 NoteMash
                             </a>
                         </Link>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                        <button 
+                            className="btn-exit"
+                            onClick={this.logOut}
+                        >
+                            Cerrar sesión   <ExitToAppIcon />
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <div className="navbar-nav ml-auto">

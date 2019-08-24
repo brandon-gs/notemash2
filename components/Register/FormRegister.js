@@ -234,7 +234,7 @@ class FormRegister extends Component {
                                     {this.state.formErrors.password}
                                 </InputError>
                             </div>
-                            <div className="form-group" className="col-md-6">
+                            <div className="form-group" className="col-md-6 mb-1">
                                 <label htmlFor="InputPassword2">Confirmar contraseña:</label>
                                 <input
                                     type="password"
