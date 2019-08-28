@@ -76,8 +76,8 @@ class MyDocument extends Document {
                         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
                     />
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                    <meta name="author" content="Gosu" />
-                    <meta name="keywords" content="Notemash, notemash, notemash register , notemash registro, notemash login, heroku, app, herokuapp, aplicacion, web, estudiantes, control, notas, control de notas, calificaciones, eventos, pagos, notemash, crear notas, crear recordatorios, registro, register, login, iniciar sesion" />
+                    <meta name="author" content="Brandon" />
+                    <meta name="keywords" content="Notemash, notemash, notemash register , note, mash notemash registro, notemash login, heroku, app, herokuapp, aplicacion, web, estudiantes, control, notas, control de notas, calificaciones, eventos, pagos, notemash, crear notas, crear recordatorios, registro, register, login, iniciar sesion" />
                     <meta name="google-site-verification" content="xhgcuA61f-hyiQfWC7cuyOUrlRP4xWXb9QT9Cfa21lg" />
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />

@@ -94,3 +94,8 @@
     font-size: 5.5rem;
   }
 }
+
+img {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}

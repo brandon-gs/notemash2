@@ -21,8 +21,8 @@ const NotePage = ({ user }) => {
         setData(true);
     }
 
-    useEffect(() => {
-        if (!data) { getNotes(); }
+    useEffect(async () => {
+        if (!data) { await getNotes(); }
     });
 
     // La clase cards-notes hace que la pagina sea responsive
