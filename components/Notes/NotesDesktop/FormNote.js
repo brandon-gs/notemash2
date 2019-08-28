@@ -38,11 +38,11 @@ const FormNote = ({ titleProp, descriptionProp, dateProp, getNotes, user, action
         } else {
             await axios.post('/api/notes', newNote);
         }
-        /*
+        
         setDate(new Date());
         setTitle('');
         setDescription('');
-        */
+        
         getNotes();
     }
 
