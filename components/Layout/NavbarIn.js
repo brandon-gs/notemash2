@@ -54,7 +54,7 @@ class NavbarIn extends Component {
                 </Head>
                 <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
                     <div className="container">
-                        <Link href="/profile">
+                        <Link href="/notes">
                             <a className="navbar-brand">
                                 <i className="material-icons align-middle pr-1 pb-1">
                                     assignment </i>
