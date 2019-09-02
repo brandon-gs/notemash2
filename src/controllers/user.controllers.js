@@ -7,8 +7,13 @@ userCtrl.getUser = (req, res) => {
     res.json(req.user);
 }
 
+userCtrl.getUserId = (req, res) => {
+    const { _id } = req.user;
+    res.json({ _id });
+}
+
 userCtrl.getUsers = async (req, res) => {
-    const users = await User.find({},{"username":1,"updatedAt":1,"_id":0});
+    const users = await User.find({}, { "username": 1, "updatedAt": 1, "_id": 0 });
     res.json(users);
 }
 

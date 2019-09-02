@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
 import axios from 'axios';
 
 import NoteList from './NoteList';
 import FormNote from './FormNote';
 
-const NotePage = ({ user }) => {
+const NotePage = () => {
 
     const [data, setData] = useState(false);
     const [notes, setNotes] = useState([]);
 
     const getNotes = async () => {
-        const { _id } = user;
+        const userId = await axios.post('/api/getUserId');
+        const { _id } = userId.data;
         const res = await axios.get('/api/notes/', {
             params: {
                 _id
             }
-        });
+        }); 
         setNotes(res.data);
         setData(true);
     }
@@ -49,8 +49,4 @@ const NotePage = ({ user }) => {
     )
 }
 
-const mapStateToProps = state => ({
-    user: state.user
-})
-
-export default connect(mapStateToProps, {})(NotePage);
+export default NotePage;

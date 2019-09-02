@@ -1,7 +1,6 @@
 const nextApp = require('../index');
 const { Router } = require('express');
 const router = Router();
-const User = require('../models/User');
 
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 

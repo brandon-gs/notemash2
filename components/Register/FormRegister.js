@@ -165,7 +165,7 @@ class FormRegister extends Component {
 
     render() {
         return (
-            <div className="card custom-card mx-auto p-1">
+            <div className="card custom-card mx-auto p-1 mb-5">
                 <div className="card-body">
                     <h3 className="form-title card-title text-center font-weight-bold">Crear una cuenta</h3>
                     <form onSubmit={this.handleSubmit}>

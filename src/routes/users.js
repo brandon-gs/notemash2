@@ -3,10 +3,15 @@ const router = Router();
 
 const passport = require('passport');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
-const { verifyUser, getUser, getUsers,
-    checkUser, checkEmail, logOut } = require('../controllers/user.controllers');
+const { 
+    verifyUser, getUser, getUsers,
+    checkUser, checkEmail, logOut,
+    getUserId
+} = require('../controllers/user.controllers');
 
 router.post('/api/getUsers', getUsers);
+
+router.post('/api/getUserId', getUserId);
 
 router.post('/verifyUser', isNotLoggedIn, verifyUser);
 

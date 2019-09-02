@@ -78,7 +78,7 @@ class FormLogin extends Component {
     render() {
         return (
             <div>
-                <div className="card custom-card mx-auto">
+                <div className="card custom-card mx-auto mb-5">
                     <div className="card-body">
                         <h1 className="form-title card-title text-center font-weight-bold mb-4">Ingresa</h1>
                         <Alert visible={this.state.alertVisible} onClick={this.onDismiss}>
