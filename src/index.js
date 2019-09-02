@@ -1,4 +1,5 @@
 const app = require('./app');
+const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
 const next = require('next');
@@ -18,7 +19,7 @@ nextApp.prepare()
         app.get("/sitemap.xml", function (req, res) {
             res.header("Content-Type", "application/xml");
             (async function sendXML() {
-                let xmlFile = await createSitemap()                
+                let xmlFile = await createSitemap()
                 // Send it to the browser
                 res.send(xmlFile);
                 // Create a file on the selected destination
@@ -29,6 +30,14 @@ nextApp.prepare()
 
         app.use('/', require('./routes/pages'));
         app.use('/api/notes', require('./routes/notes'));
+
+        const faviconOptions = {
+            root: path.join(__dirname,'../static/')
+        };
+        server.get('/favicon.ico', (req, res) => (
+            res.status(200).sendFile('favicon.ico', faviconOptions)
+        ));
+
 
         app.get('*', (req, res) => {
             return handle(req, res)
