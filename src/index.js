@@ -34,7 +34,7 @@ nextApp.prepare()
         const faviconOptions = {
             root: path.join(__dirname,'../static/')
         };
-        server.get('/favicon.ico', (req, res) => (
+        app.get('/favicon.ico', (req, res) => (
             res.status(200).sendFile('favicon.ico', faviconOptions)
         ));
 
