@@ -15,7 +15,7 @@ const Index = () => (
                 <meta name="description" content="Notemash heroku app es una aplicacion web para ayudar a los estudiantes a tener mayor control en todo lo relacionado a su escuela, peuden administrar sus tareas, crear recordatorios, crear sus notas, agregar su horario de clase, llevar un control sobre sus calificaciones y sus aprendizajes más importantes de cada materia no son necesarios muchos datos para tu registro" />
             </Head>
             <NavbarOut active="home" title="Notemash" />
-            <header className="masthead d-flex">
+            <header className="masthead div-flex ">
                 <div className="container text-center">
                     <h1 className="masthead-title mb-1">NOTEMASH</h1>
                     <h2 className="mb-5">
@@ -29,10 +29,8 @@ const Index = () => (
                 </div>
                 <div className="overlay"></div>
             </header>
-        </main>
-        <div className="mt-10">
             <Footer />
-        </div>
+        </main>
     </>
 )
 
