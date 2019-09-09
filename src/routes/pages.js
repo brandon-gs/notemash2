@@ -28,7 +28,7 @@ router.get('/notas', isLoggedIn, (req, res) => {
     return nextApp.render(req, res, '/notes', req.query);
 });
 
-router.get('/logout', (req, res) => {
+router.delete('/logout', (req, res) => {
     req.logOut();
     res.redirect('/login');
 });

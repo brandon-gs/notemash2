@@ -14,13 +14,13 @@ app.set('port', process.env.PORT || 3000);
 
 // MIDDLEWARE
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(session({
     secret: 'garciasanchezz12',
     resave: false,
     saveUninitialized: false,
     cookie: {
-        maxAge: 31536000 * 1000 // 1 year
+        expires: 604800000 * 4 * 12 // 1 week * 4 weeks * 12 months
     },
     store: new MongooseStore({
         connection: mongoose

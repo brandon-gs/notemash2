@@ -33,8 +33,14 @@ class NavbarIn extends Component {
     }
 
     logOut = async () => {
-        await axios.post('/logout');
-        window.location.href = '/login'
+        await fetch('/logout', {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        });
+        window.location.href = '/login';
     }
 
     render() {
