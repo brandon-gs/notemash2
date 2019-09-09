@@ -30,7 +30,6 @@ router.get('/notas', isLoggedIn, (req, res) => {
 
 router.delete('/logout', (req, res) => {
     req.logOut();
-    res.redirect('/login');
 });
 
 router.post('/getAuth', (req, res) => {
