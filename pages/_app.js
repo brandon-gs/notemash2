@@ -22,9 +22,16 @@ class MyApp extends App {
         if (jssStyles) {
             jssStyles.parentNode.removeChild(jssStyles);
         }
+
+        Router.onRouteChangeComplete = async url => {
+            await trackPageView(url);
+        };
+
+
+
         // OBTENER DATOS DE USUARIO
         const res = await axios.post('/getUser');
-        if (res.data.username) {
+        if (!res.data.username) {
             this.props.store.dispatch(
                 {
                     type: 'GET_USER',
@@ -32,10 +39,7 @@ class MyApp extends App {
                 }
             );
         }
-
-        Router.onRouteChangeComplete = async url => {
-            await trackPageView(url);
-        };
+        
 
     }
 

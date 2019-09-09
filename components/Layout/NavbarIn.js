@@ -28,7 +28,7 @@ class NavbarIn extends Component {
         })
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         this.changeActive();
     }
 
@@ -36,7 +36,7 @@ class NavbarIn extends Component {
         await fetch('/logout', {
             method: 'POST'
         });
-        window.location.href = "/login";
+        window.location.reload();
     }
 
     render() {
