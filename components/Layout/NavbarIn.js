@@ -40,7 +40,7 @@ class NavbarIn extends Component {
                 'Content-Type': 'application/json'
             }
         });
-        window.location.href = '/login';
+        window.location = '/login';
     }
 
     render() {
