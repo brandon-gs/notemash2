@@ -20,7 +20,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        expires: 604800000 * 4 * 12 // 1 week * 4 weeks * 12 months
+        maxAge: 604800000 * 4 * 12 // 1 week * 4 weeks * 12 months
     },
     store: new MongooseStore({
         connection: mongoose

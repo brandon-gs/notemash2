@@ -32,8 +32,8 @@ userCtrl.checkEmail = async (req, res) => {
 }
 
 userCtrl.logOut = (req, res) => {
+    req.session.cookie.maxAge = 0;
     req.logOut();
-    res.clearCookie('connect.sid');
     res.redirect('/');
 }
 

@@ -34,13 +34,9 @@ class NavbarIn extends Component {
 
     logOut = async () => {
         await fetch('/logout', {
-            method: 'DELETE',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
+            method: 'POST'
         });
-        window.location = '/login';
+        window.location.href = "/login";
     }
 
     render() {
@@ -67,7 +63,7 @@ class NavbarIn extends Component {
                                 NoteMash
                             </a>
                         </Link>
-                        <button 
+                        <button
                             className="btn-exit"
                             onClick={this.logOut}
                         >
@@ -75,13 +71,8 @@ class NavbarIn extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <div className="navbar-nav ml-auto">
-                                <div className={this.state.linksClass.notes}>
-                                    <Link href="/profile">
-                                        <a className="nav-link">Notas</a>
-                                    </Link>
-                                </div>
                                 <div className="nav-item">
-                                    <a onClick={this.logOut} className="nav-link">Cerrar sesión</a>
+                                    <a onClick={this.logOut} className="nav-link">Cerrar sesión <ExitToAppIcon /></a>
                                 </div>
                             </div>
                         </div>

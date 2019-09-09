@@ -28,10 +28,6 @@ router.get('/notas', isLoggedIn, (req, res) => {
     return nextApp.render(req, res, '/notes', req.query);
 });
 
-router.delete('/logout', (req, res) => {
-    req.logOut();
-});
-
 router.post('/getAuth', (req, res) => {
     res.send(req.isAuthenticated());
 })
