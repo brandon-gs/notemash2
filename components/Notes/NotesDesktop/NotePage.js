@@ -1,10 +1,11 @@
+import { connect } from 'react-redux';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import NoteList from './NoteList';
 import FormNote from './FormNote';
 
-const NotePage = () => {
+const NotePage = ({dispatch}) => {
 
     const [data, setData] = useState(false);
     const [notes, setNotes] = useState([]);
@@ -16,13 +17,24 @@ const NotePage = () => {
             params: {
                 _id
             }
-        }); 
+        });
         setNotes(res.data);
         setData(true);
     }
 
     useEffect(() => {
-        if (!data) { getNotes(); }
+        if (!data) {
+            async function fetchData() {
+                const user = await axios.post('/getUser');
+                console.log(user);
+                await dispatch({
+                    type: 'GET_USER',
+                    user: user.data
+                });
+            }
+            fetchData();
+            getNotes();
+        }
     });
 
     // La clase cards-notes hace que la pagina sea responsive
@@ -38,15 +50,15 @@ const NotePage = () => {
                         />
                     </div>
                     <div className="col-md-8 m-0">
-                        <NoteList 
+                        <NoteList
                             notes={notes}
                             getNotes={getNotes}
                         />
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     )
 }
 
-export default NotePage;
+export default connect()(NotePage);
