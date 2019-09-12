@@ -5,7 +5,7 @@ import NoteList from './NoteList';
 import axios from 'axios';
 
 
-const NotePage = ({ user }) => {
+const NotePage = ({ user, dispatch }) => {
     
     const [data, setData] = useState(false);
     const [notes, setNotes] = useState([]);
@@ -21,8 +21,19 @@ const NotePage = ({ user }) => {
         setData(true);
     }
 
-    useEffect(() => {
-        if (!data) { getNotes(); }
+      useEffect(() => {
+        if (!data) {
+            async function fetchData() {
+                const user = await axios.post('/getUser');
+                console.log(user);
+                await dispatch({
+                    type: 'GET_USER',
+                    user: user.data
+                });
+            }
+            fetchData();
+            getNotes();
+        }
     });
 
     return (
