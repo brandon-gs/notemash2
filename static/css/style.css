@@ -48,7 +48,6 @@
 @media screen and (min-width: 992px) {
   .navbar-profile-bottom,
   .card-profile-responsive,
-  .modal-dialog,
   .btn-exit {
     display: none !important;
   }
