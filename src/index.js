@@ -29,7 +29,7 @@ nextApp.prepare()
 
 
         app.use('/', require('./routes/pages'));
-        app.use('/api/notes', require('./routes/notes'));
+        app.use('/api/notes/', require('./routes/notes'));
 
         const faviconOptions = {
             root: path.join(__dirname,'../static/')
