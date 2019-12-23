@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container p-2">
                 <div className="row">
                     <div className="mx-auto text-center">
-                        <p className="text-footer">NoteMash de ScriptMash | &copy; Copyright 2019, Todos los derechos reservados</p>
+                        <p className="text-footer">NoteMash de Brandon-GS | &copy; Copyright 2019, Todos los derechos reservados</p>
                         <p>
                             <a className="icon-contact" href="https://www.facebook.com/ScriptMash-112988803409290/" rel="noopener noreferrer" target="_blank">
                                 <i className="fab fa-facebook-square fa-2x"></i>
