@@ -39,7 +39,7 @@ class NavbarOut extends Component {
           {`
                     body {
                         background-color:black;
-                        background: url("static/img/index_background.jpg");
+                        background: rgba(0,0,0,0.4), url("static/img/index_background.jpg");
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-attachment: fixed;
