@@ -8,7 +8,12 @@ import Head from 'next/head';
 
 const Index = () => (
     <>
-        <main className="index">
+        <main className="index" style={{ 
+            backgroundImage: 'url(/static/img/index_background.jpg)',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+        }}>
             <Head>
                 <meta name="author" content="Gosu" />
                 <meta name="keywords" content="Notemash, heroku, app, herokuapp, aplicacion, web, estudiantes, control, notas, control de notas, calificaciones, eventos, pagos, notemash, crear notas, crear recordatorios, registro, register, login, iniciar sesion" />
