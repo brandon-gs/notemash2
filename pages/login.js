@@ -13,7 +13,12 @@ const Index = () => (
             <meta name="description" content="Inicia sesion en notemash heroku app es una aplicacion web para ayudar a los estudiantes a tener mayor control en todo lo relacionado a su escuela, peuden administrar sus tareas, crear recordatorios, crear sus notas, agregar su horario de clase, llevar un control sobre sus calificaciones y sus aprendizajes más importantes de cada materia solo necesitas una cuenta para iniciar" />
         </Head>
         <NavbarOut active="login" title="Ingresa | NoteMash" />
-        <div className="div-flex">
+        <div className="div-flex" style={{ 
+            backgroundImage: 'url(/static/img/index_background.jpg)',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+        }}>
             <FormLogin />
         </div>
         <Footer />
