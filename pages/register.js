@@ -12,7 +12,12 @@ const Register = () => (
             <meta name="description" content="Registrate en notemash heroku app es una aplicacion web para ayudar a los estudiantes a tener mayor control en todo lo relacionado a su escuela, peuden administrar sus tareas, crear recordatorios, crear sus notas, agregar su horario de clase, llevar un control sobre sus calificaciones y sus aprendizajes más importantes de cada materia no son necesarios muchos datos para tu registro" />
         </Head>
         <NavbarOut title="Registro | NoteMash" activo="registro" />
-        <div className="container div-flex">
+        <div className="container div-flex" style={{ 
+            backgroundImage: 'url(/static/img/index_background.jpg)',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+        }}>
             <FormRegister />
         </div>
         <div className="mt-10">
