@@ -13,7 +13,7 @@
     "express-session": "^1.16.2",
     "mongoose": "^5.7.5",
     "mongoose-express-session": "0.0.5",
-    "next": "^9.0.3",
+    "next": "^11.1.0",
     "next-redux-wrapper": "^3.0.0-alpha.3",
     "next-routes": "^1.4.2",
     "passport": "^0.4.0",
