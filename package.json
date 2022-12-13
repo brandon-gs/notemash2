@@ -9,7 +9,7 @@
     "@material-ui/styles": "^4.3.0",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.16.2",
     "mongoose": "^5.7.5",
     "mongoose-express-session": "0.0.5",
